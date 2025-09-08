@@ -29,21 +29,20 @@ signupForm.addEventListener('submit', function(e) {
   const school = document.getElementById('school').value.trim();
   const education = document.getElementById('education').value;
 
-  // สถานะผู้เข้าร่วม
   const roles = document.querySelectorAll('input[name="role"]:checked');
-  // เพศ
+ 
   const msex = document.querySelector('input[name="msex"]:checked');
-  // วันเข้าใช้งาน
+
   const day1 = document.querySelector('input[name="day1"]:checked');
   const day2 = document.querySelector('input[name="day2"]:checked');
   const day3 = document.querySelector('input[name="day3"]:checked');
-  // ที่จอดรถ
+
   const park1 = document.querySelector('input[name="park1"]:checked');
-  // ของที่ระลึก
+ 
   const gift1 = document.querySelector('input[name="gift1"]:checked');
   const gift2 = document.querySelector('input[name="gift2"]:checked');
   const gift3 = document.querySelector('input[name="gift3"]:checked');
-  // ยินยอม
+
   const check1 = document.querySelector('input[name="check1"]:checked');
 
   if (!name) errors.push('กรุณากรอกชื่อ');
