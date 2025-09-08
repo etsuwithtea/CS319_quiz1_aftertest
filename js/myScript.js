@@ -44,6 +44,9 @@ signupForm.addEventListener('submit', function(e) {
   if (!surname) {
     errors.push('กรุณากรอกนามสกุล');
   }
+  if (!/^[A-Za-zก-๙]+$/.test(surname)) {
+    errors.push('นามสกุลไม่ถูกต้อง');
+  }
   if (!phone) {
     errors.push('กรุณากรอกเบอร์โทรศัพท์');
   } else if (!/^\d{9,10}$/.test(phone)) {
@@ -66,7 +69,7 @@ signupForm.addEventListener('submit', function(e) {
   if (!roles.length) {
     errors.push('กรุณาเลือกสถานะผู้เข้าร่วม');
   }
-  if (!msex) {
+  if (!sex) {
     errors.push('กรุณาเลือกเพศ');
   }
   if (!birthday) {
