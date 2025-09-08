@@ -6,20 +6,18 @@
     <title>ตัวอย่างฟอร์มและการตรวจสอบ</title>
 
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
     <div class="content">
     <div class="text-containner">
         <h1 class="headline">คิดจริง ทำจริง CREATIVE CLUSTER</h1>
-        <p>เจอกันได้ในวันที่ 29-30 lb สิงหาคม 2568</p>
-        <p>กรุณากรอกข้อมูลของท่าให้ครบถ้วนและถูกต้อง</p>
+        <p>เจอกันได้ในวันที่ 29-31 สิงหาคม 2568</p>
+        <p>กรุณากรอกข้อมูลของท่านให้ครบถ้วนและถูกต้อง</p>
         <img src="Assets/banner-th-2025-2.jpg">
     </div>
 
     <div class="form-container">
         <h1>ฟอร์มลงทะเบียน</h1>
-
         <form id="signupForm" novalidate>
             <label>ชื่อ
                 <input type="text" id="name" name="name" required placeholder="ชื่อ">
@@ -38,7 +36,7 @@
             </label>
 
             <label>ที่อยู่
-                <input type="text" id="email" name="email" required placeholder="xx/xxx x.xxx">
+                <input type="text" id="address" name="address" required placeholder="xx/xxx x.xxx">
             </label>
 
             <label >จังหวัด</label>
@@ -61,12 +59,11 @@
                 <label><input type="radio" id="role" name="role" value="role3">ผู้ปกครอง/บุคคลทั่วไป</label>
             </div>
 
-
             <label>เพศ</label>
             <div class="form-checkbox">
-                <label><input type="radio" id="msex" name="msex" value="Male" required>Male</label>
-                <label><input type="radio" id="fsex" name="msex" value="Female">Female</label>
-                <label><input type="radio" id="lgbtq+" name="msex" value="LGBTQ+">LGBTQ+</label>
+                <label><input type="radio" id="msex" name="sex" value="Male" required>Male</label>
+                <label><input type="radio" id="fsex" name="sex" value="Female">Female</label>
+                <label><input type="radio" id="lgbtq+" name="sex" value="LGBTQ+">LGBTQ+</label>
             </div>
 
             <label>วันเกิด
@@ -89,14 +86,13 @@
 
             <label >กรุณาเลือกวันเข้าใช้งาน</label>
             <div class="form-checkbox">
-                <label><input type="radio" id="day1" name="day1" value="day1" required>วันพฤหัสบดีที่ 29 สิงหาคม</label>
-                <label><input type="radio" id="day2" name="day2" value="day2">วันศุกร์ที่ 30 สิงหาคม</label>
-                <label><input type="radio" id="day3" name="day3" value="day3">วันเสาร์ที่ 31 สิงหาคม</label>
+                <label><input type="checkbox" id="day1" name="day1" value="day1" required>วันพฤหัสบดีที่ 29 สิงหาคม</label>
+                <label><input type="checkbox" id="day2" name="day2" value="day2">วันศุกร์ที่ 30 สิงหาคม</label>
+                <label><input type="checkbox" id="day3" name="day3" value="day3">วันเสาร์ที่ 31 สิงหาคม</label>
             </div>
 
 
             <label >ต้องการที่จอดรถหรือไม่</label>
-
             <div class="form-checkbox">
                 <label><input type="radio" id="park1" name="park" value="park1" required>ใช่</label>
                 <label><input type="radio" id="park2" name="park" value="park2">ไม่ใช่</label>
@@ -105,11 +101,10 @@
             <label>ต้องการรับของที่ระลึก</label>
             <div class="form-checkbox">
                 <label><input type="radio" id="gift1" name="gift" value="gift1" required>เสื้อยืด</label>
-                <label><input type="radio" id="gift2" name="gift" value="gift2">แก้วน้ำ</label>
-                <label><input type="radio" id="gift3" name="gift" value="gift3">กระเป๋าผ้า</label>
+                <label><input type="radio" id="gift2" name="gift" value="gift2" required>แก้วน้ำ</label>
+                <label><input type="radio" id="gift3" name="gift" value="gift3" required>กระเป๋าผ้า</label>
             </div>
-
-            
+      
             <div class="form-checkbox">
                 <label>ข้าพเจ้ารับทราบ ตกลง และยินยอมว่า มหาวิทยาลัยเก็บรวบรวม ใช้ประมวลผล และเปิดเผยข้อมูล ส่วน บุคคลของข้าพเจ้าตามนโยบายคุ้มครองข้อมูลส่วนบุคคลของมหาวิทยาลัยที่ประกาศใช้</label>
                 <label><input type="radio" id="check1" name="check1" value="check1" required>ใช่</label>
